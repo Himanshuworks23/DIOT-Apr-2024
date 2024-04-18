@@ -1,0 +1,68 @@
+HTML - Hyper Text Markup Language
+
+.html, .htm
+
+<html> start tag/element
+</html>  end tag/elemnt
+<head>
+<body>
+
+<b>, <i>, <u>
+<br>  - line break
+<p> - paragraph
+<hn> - 1-6  header/heading tags
+
+<hr> - horizontal ruler
+<ol> - Ordered List
+<li> - List Item
+<ul> - Unordered List
+<img src="local image/url">
+<table>, <tr>, <td>, <th>
+<a href="url"> - anchor to create link
+
+
+attributes?
+<tag attrib1="value1"  attrib2="value2" attri31="value3" >
+
+key=value
+
+Container Tags:
+- <p>
+- <div>
+- <span>
+
+9+3 form elemnts:
+9: <input type=?>
+
+text-based:
+- text
+- password
+- hidden  XX
+
+button-based
+- button
+- submit
+- reset
+
+Misc
+- radio
+- checkbox
+- file
+
+
+3:
+- <textarea> - multiline text
+- <select><option>  - drop down
+- <button>
+
+comment:
+<!-- comment text -->
+
+<a href="#">Link text </a>
+
+
+
+
+
+
+
