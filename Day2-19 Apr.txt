@@ -1,0 +1,34 @@
+Block vs Inline elements:
+Block : <p>, <div>, <fieldset>, <hr>, <Hn>
+inline : <span>, <input>, 
+
+HTML5:
+form elements:
+Old attributes: maxlength, name, value, readonly, 
+
+16 new form attributes:
+- placeholder
+- required - mandatory field
+- autofocus
+- min
+- max
+- pattern
+
+
+13 new form elements: <input type=? >
+- email
+- number
+- range
+- date, month, time, 
+- color
+- tel
+- url
+- search
+
+
+
+
+media tags:
+- <img>
+- <audio src=? controls>
+- <video src=? controls>
