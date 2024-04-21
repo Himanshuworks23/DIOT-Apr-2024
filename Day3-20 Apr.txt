@@ -1,0 +1,127 @@
+3 ways to insert JS code:
+- <body>
+- <head>
+- Ext file (.js)
+
+
+Data types in C: int, float, boolean, short, double, byte, char
+
+Data types in JS:
+- undefined
+- number
+- string
+- boolean
+- null
+
+function greet(){
+                document.write("Hello World! <br>")
+            }
+            function greetUser(username){
+                document.write("Hello " + username + "! <br>")
+            }
+            function add(a,b){
+                return a+b
+            }
+
+
+ES 6 : rest operator ...
+
+<script>
+            function add(...arr){
+                var sum=0
+                for(i=0;i<arr.length;i++)
+                   sum += arr[i]
+                console.log("The sum is ", sum) 
+            }
+            
+        </script>
+
+------------------------------------
+
+scope of vars:
+- local/function
+- global
+
+
+
+Function expression
+
+<script>
+           //Function expression
+           var a = 10;
+           var b = "hello"
+           var c = a/10*8+1000
+
+           function greet(){
+                document.write("Hello World! <br>")
+            }
+
+           var greet1 = function(){
+            console.log("Hello World")
+           }
+           greet1()
+
+           function greetUser(username){
+                document.write("Hello " + username + "! <br>")
+            }
+
+            var greetUser1 = function(username){
+                document.write("Hello " + username + "!")
+            }
+            greetUser1("Adwait")
+
+            function add(a,b){
+                return a+b
+            }
+
+            var add1 = function(x,y){
+                return x+y
+            }
+
+        </script>
+
+-------------------------------------------
+Functions:
+- custom/user-defined functions
+- Pre-built functions
+parseInt(), parseFloat(), isFinite(), isNan()
+
+
+
+Objects:
+1) Every JS obj exposes pros as well as methods
+
+obj.property
+obj.method()
+
+
+
+- Pre-defined/Core objects : string, Math, Date, Arrays
+- custom/user-defined objects
+
+
+string obj:
+- props : length, prototype
+- methods : charAt(), indexOf(), toUppercase(), split(), slice()
+
+
+
+substr()
+subString()
+slice()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
