@@ -1,0 +1,188 @@
+Obj rules:
+1) Every obj exposes pros and methods
+2) Every prop is read/write
+
+Date predef obj:
+
+setXXXX()
+getXXX()
+
+setDate()
+setTime()
+setMonth()
+
+
+
+int arr[10]
+
+char ch[25]
+
+
+Array:
+props : length, prototype
+methods: pop(), push(), sort(), reverse()
+
+
+User-defined Objects:
+- Function cons
+- Object superclass
+- Object Initializer
+- Class 
+
+
+<script>
+       //Object Initializer
+       //JSON - Javascript Object Notation
+
+       var obj = {}
+
+       var stud = {sname:"Harsha", age:23}
+       //console.log(stud.sname, stud.age)
+
+       stud.sname = "Pranali"
+       stud.age = 27
+       //console.log(stud.sname, stud.age)
+
+        var person = {
+            pname: "Himanshu",
+            age : 23.5,
+            vaccinated : true,
+            hobbies : ["poetry", "coding", "reading"],
+            address : {city:"Yavatmal",state:"Mah"}
+        }
+        //console.log(person.pname, person.age, person.vaccinated)
+        //console.log(person.hobbies[1])
+       // console.log(person.address.city)
+
+        var book = {
+            bookid : 101,
+            bname : "Core Java",
+            author : "Shrilata",
+            price : 400,
+            display : function(){
+                console.log(this.bookid, this.bname, this.author, this.price)
+            },
+            incrPrice : function(amount){
+                this.price += amount
+            }
+        }
+       
+        book.display()
+       book.incrPrice(100)
+        book.display()
+
+        var persons = [
+            {pid : 101, pname:"aaaa", age:45},
+            {pid : 102, pname:"bbbbb", age:15},
+            {pid : 103, pname:"ccc", age:30},
+            {pid : 103, pname:"ccc", age:30},
+            {pid : 103, pname:"ccc", age:30},
+            {pid : 103, pname:"ccc", age:30},
+            {pid : 103, pname:"ccc", age:30}
+        ]
+
+        var str = "<table border='1'>"
+
+        for(person of persons){
+            str += "<tr><td>" + person.pid + "</td><td>" + person.pname + "</td><td>" + person.age + "</td></tr>"
+        }
+
+        str += "</table>"
+
+        document.write(str)
+    </script>
+
+
+
+---------------------------------
+
+<script>
+        //creating user-def obj - class
+
+       class Greeter{
+          greet(){
+            document.write("Hello World")
+          }
+       }
+
+       //g1 = Greeter()  //instantiating in python
+       //g2 = Greeter()  //creating obj g2 in python
+       var d1 = new Date()
+       var g1 = new Greeter()
+       g1.greet()
+
+
+       class Emp{
+         constructor(empid, ename, sal){
+            this.empid = empid;
+            this.ename = ename;
+            this.sal = sal;
+         }
+
+         displayEmpDetails(){
+            console.log(this.empid, this.ename, this.sal)
+         }
+
+         incrSal(amount){
+            this.sal += amount
+         }
+       }
+
+       var e1 = new Emp(101, "Praful", 45000)
+       e1.displayEmpDetails()
+       e1.incrSal(5000)
+       e1.displayEmpDetails()
+
+
+       var e2 = new Emp(102, "Prasad", 55000)
+       var e3 = new Emp(103, "Sahil", 40000)
+       var e4 = new Emp(104, "Sejal", 35000)
+
+    </script>
+
+window.alert()
+window.propmt()
+window.confirm()
+
+
+setInterval() - execute a func after every periodic interval
+setTimeout() - waits for a period before executing a func
+
+Higher order functions:
+setTimeout(f1, ms)
+setInterval(f1, 1000*60*60*24) 
+
+
+
+function f1(){....}
+f1()
+
+
+- Client-side validation
+- Event handling
+- DOM manipulation
+
+<head>
+    <script>
+        function add(){
+            var n1 = parseInt(document.getElementById("no1").value)
+            var n2 = parseInt(document.getElementById("no2").value)
+            var sum = n1+n2
+            document.getElementById("p1").innerHTML = sum
+        }
+    </script>
+  </head>
+  <body>
+    <h1>Welcome to Javascript</h1>
+    <form>
+      No1 : <input id="no1" > <br>
+      No2 : <input id="no2" > <br>
+      <input type="button" 
+             value="Add" 
+             onclick="add()">
+    </form>
+    The sum is : <span id="p1"></span>
+  </body>
+
+
+
