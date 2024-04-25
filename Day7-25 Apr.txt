@@ -1,0 +1,186 @@
+<script>
+      function greet(){
+           document.write("Hello World! <br>")
+       }
+
+      var greet1 = function(){
+       console.log("Hello World")
+      }
+     
+      var greet2 = () => document.write("Hello World! <br>")
+
+      greet2()
+
+
+
+      function greetUser(username){
+           document.write("Hello " + username + "! <br>")
+       }
+
+       var greetUser1 = function(username){
+           document.write("Hello " + username + "!")
+       }
+
+       var greetUser2 = uname =>  document.write("Hello " + uname + "!")
+      
+       greetUser2("Adwait")
+
+
+
+       function add(a,b){
+           return a+b
+       }
+
+       var add1 = function(x,y){
+           return x+y
+       }
+
+       var add2 = (x,y) => x+y
+
+       document.write("Sum is " + add2(10,20) + "<br>")
+
+
+
+       function strOp(str){
+        document.write(str.toUpperCase() + "! <br>")
+        document.write(str.charAt(4) + "! <br>")
+        document.write(str.indexOf("o") + "! <br>")
+        document.write(str.slice(0,1) + "! <br>")
+       }
+
+       var strOp1 = function(str){
+        document.write(str.toUpperCase() + "! <br>")
+        document.write(str.charAt(4) + "! <br>")
+        document.write(str.indexOf("o") + "! <br>")
+        document.write(str.slice(0,1) + "! <br>")
+       }
+
+       var strOp2 = str => {
+        document.write(str.toUpperCase() + "! <br>")
+        document.write(str.charAt(4) + "! <br>")
+        document.write(str.indexOf("o") + "! <br>")
+        document.write(str.slice(0,1) + "! <br>")
+       }
+
+   </script>
+
+---------------------------
+<script>
+      function f1(){
+        document.write("Hi <br>")
+      }
+
+      setTimeout(f1, 2000)
+
+     //function(){}
+     //() => {}
+
+      setTimeout(function(){
+        document.write("Hi <br>")
+      }, 2000)
+
+
+      setTimeout(()=>{
+        document.write("Hello lambda <br>")
+      }, 2000)
+
+   </script>
+
+
+<button onclick="getData()"> Fetch Data </button>
+
+function getData(){
+}
+
+
+1) obtain/retrive the XHR obj
+
+   var xhr = new XmlHttpRequest()
+
+2) Obtain a connection to server
+   
+   xhr.open(HTTP-METHOD, URL)
+   xhr.open("GET", "http://someserver.com/vetapp")
+
+3) Send the request
+   xhr.send()
+
+4) 
+   xhr.onreadystatechange = function(){}
+
+   xhr.onreadystatechange = function(){
+        if(xhr.readystate == 4 && xhr.status == 200)
+           var str = JSON.parse(xhr.responseText)
+   }
+
+
+
+{bookid:101, bname:"Core Java", author:"Cay H"}
+
+
+
+
+CSS selectors:   modify the style of the doc
+- tag  p{....}, h2,h3{...}, div{color:red}
+- id   #p1{color:blue}
+- class  .c1{....}
+
+
+
+
+JQuery selectors:  modify the behaviour!! of the doc
+- tag  
+- id   #
+- class . 
+
+
+$()
+$("p") - selects ALL paras in doc. doc.getElementsByTagName("p")
+$("h1") - select all <h1> elements
+$("a") - select all anchor <a> tags
+$("h1,h2") - select all <h1> and <h2> tags
+$("div,p") - select all div and para tags
+$("div p") - selects all paras INSIDE div
+
+
+$("#p1") - select that element whose id is p1
+$("#p1, #p2")
+
+$(".c1") - select all elements with class c1
+$(".c1, .c2") 
+
+
+
+.html()
+.text()
+.css()
+.length
+.hide()
+.show()
+.each()
+
+
+
+$("p")
+jQuery("p")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
