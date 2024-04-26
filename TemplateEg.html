@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Simple Append</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!--<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>-->
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+<script>
+$(document).ready(function() {
+  var studList = [
+    { Name: "Anil", Surname: "Patil", Grade: 'A' },
+    { Name: "Soha", Surname: "Kumari", Grade: 'B' },
+    { Name: "Arnav", Surname: "Rao", Grade: 'A' },
+    { Name: "Vanita", Surname:"Kapoor", Grade: 'B'}
+  ];
+  $("#studTemplate").tmpl(studList).appendTo("#students");
+});
+</script>
+<script id="studTemplate" type="text/html">
+  <!--<tr><td>${Name}</td><td>${Surname}</td>
+    {{if Grade=='A'}}
+      (<td style='color:red'>First Class</td>)
+  {{else}}
+      (<td style='color:blue'>Second-class</td>)
+  {{/if}}-->
+  </tr>
+  <li> ${Name} ${Surname}
+  {{if Grade='A'}}
+      (<span style='color:red'>First Class</span>)
+  {{else}}
+      (<span style='color:blue'>Secons-class</span>)
+  {{/if}}
+  </li>
+</script>
+</head>
+<body>
+    <ol id="students"></ol>
+    <!--<table border="1" id="students"></table>-->
+</body>
+</html>
+
